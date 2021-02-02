@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="web_service_url">http://185.141.33.75:92/</string>-->
+    <string name="web_service_url">http://192.168.1.36:45455/</string>
+    <string name="app_name">Demirbaş Takip Modülü</string>
+    <string name="biomedical_type">Biyomedikal Tür</string>
+    <string name="biomedical_definition">Biyomedikal Tanım</string>
+    <string name="biomedical_branch">Biyomedikal Branş</string>
+    <string name="qrcode_contains">sbu2.saglik.gov.tr/QR/QR.aspx?kno=</string>
+    <string name="barcode_prefix">http://sbu2.saglik.gov.tr/QR/QR.aspx?kno=</string>
+    <string name="tag_no_caps">KÜNYE NO</string>
+</resources>

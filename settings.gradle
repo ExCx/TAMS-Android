@@ -1,0 +1,1 @@
+include ':asset_management', ':tatf_demo', ':kbs_mobil', ':dtys_mobil', ':gateway_mobil', ':BrotherPrintLibrary', ':RfidAsciiProtocol', ':NurApiAndroid', ':DeviceList'

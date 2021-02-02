@@ -1,0 +1,109 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:mContext="com.frekanstan.dtys_mobil.view.assetdetails.AssetDetailsAssignmentFragment"
+    android:id="@+id/asset_details_assignment_list"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/assignedPersonB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/assigned_employee" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_assigned_employee_name"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:visibility="gone">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/employee_to_assign" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_employee_to_assign_name"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/assignedLocationB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/assigned_room_name" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_assigned_location_name"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:visibility="gone">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/room_to_assign" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_room_to_assign_name"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/lastControlDateB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/last_control_date" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_last_control_date"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/labelingDateB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/labeling_date" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_labeling_date"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/workingStateB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/working_state" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_working_state"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/reasonOfFailureB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/reason_of_failure" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_reason_of_failure"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

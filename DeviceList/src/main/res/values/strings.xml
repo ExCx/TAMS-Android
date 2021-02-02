@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="select_reader">RFID Okuyucu Eşleştir</string>
+
+    <string name="scanning">Mevcut okuyucular kontrol ediliyor…</string>
+	<string name="none_found">Cihaz bulunamadı</string>
+    <string name="button_add_new">Yeni Ekle</string>
+    <string name="action_add_new">Yeni Ekle</string>
+
+    <string name="transport_bt">BT</string>
+    <string name="transport_ble">BLE</string>
+    <string name="transport_usb">USB</string>
+
+    <string name="description_unknown_device">Bilinmeyen okuyucu</string>
+    <string name="description_1128">Bluetooth® UHF RFID Okuyucu</string>
+    <string name="description_1153">Bluetooth® Giyilebilir UHF RFID Okuyucu</string>
+    <string name="description_1119">Motorola MC55/65/67 için UHF RFID Okuyucu</string>
+    <string name="description_1126">Masaüstü UHF RFID Okuyucu</string>
+    <string name="description_1166">Endüstriyel Bluetooth® UHF RFID Okuyucu</string>
+    <string name="description_2166">Endüstriyel Bluetooth® UHF RFID Okuyucu (ePop-Loq)</string>
+    <string name="description_2128">Bluetooth® UHF RFID Okuyucu (ePop-Loq)</string>
+    <string name="description_ih21">Bluetooth® UHF RFID Okuyucu (ePop-Loq)</string>
+    <string name="description_2128l">UHF RFID Okuyucu (Doğrusal anten ve ePop-Loq)</string>
+    <string name="description_ih21l">UHF RFID Okuyucu (Doğrusal anten ve ePop-Loq)</string>
+    <string name="description_2128p">UHF RFID Okuyucu (Yüksek güç, doğrusal anten ve ePop-Loq)</string>
+    <string name="description_2173">Bluetooth® HF/LF RFID Okuyucu</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <!-- GENERAL -->
+    <!-- ASSET DETAILS (GENERAL) -->
+    <string name="type">Biyomedikal Tür</string>
+    <string name="definition">Biyomedikal Tanım</string>
+    <string name="branch">Biyomedikal Branş</string>
+    <!-- ASSET DETAILS (ASSIGNMENT) -->
+    <string name="assigned_section">Kullanım Alanı</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="scan_button_text">Scan</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="power_level_label_text">dBm</string>
+    <string name="use_fast_id_title">Fast Id</string>
+    <string name="tag_list_title">Transponders</string>
+    <string name="barcode_list_title">Barcodes</string>
+
+    <string name="connect_reader_menu_item_text">Connect Reader</string>
+    <string name="change_reader_menu_item_text">Change Reader</string>
+    <string name="disconnect_reader_menu_item_text">Disconnect Reader</string>
+    <string name="reset_reader_menu_item_text">Reset Reader</string>
+</resources>

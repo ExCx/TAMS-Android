@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_large">
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_large"
+        android:drawableStart="@drawable/ic_type_gray"
+        android:text="@string/operation_type"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/op_type_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:drawablePadding="8dp"
+        android:hint="@string/choose_an_operation_type"
+        android:entries="@array/countingop_types" />
+
+    <TextView
+        android:id="@+id/type_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableStart="@drawable/tree_structure_gray"
+        android:text="@string/related_asset_type"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/countingop_type_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="@string/enter_type_name_or_code"
+        android:inputType="textCapCharacters"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/person_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableStart="@drawable/person_gray_24"
+        android:text="@string/related_person"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <AutoCompleteTextView
+        android:id="@+id/countingop_person_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="@string/enter_name_or_identity_no"
+        android:inputType="textCapCharacters"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/location_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableStart="@drawable/location_gray_24"
+        android:text="@string/related_location"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <AutoCompleteTextView
+        android:id="@+id/countingop_location_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="@string/enter_name_or_unit_code"
+        android:inputType="textCapCharacters"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/storage_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableStart="@drawable/storage_gray"
+        android:text="@string/related_storage"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <AutoCompleteTextView
+        android:id="@+id/countingop_storage_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="@string/enter_name_or_unit_code"
+        android:inputType="textCapCharacters"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/person_tasked_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:drawableStart="@drawable/person_gray_24"
+        android:text="@string/person_tasked"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/countingop_person_tasked_selector"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:hint="@string/enter_name_or_identity_no"
+        android:inputType="textCapCharacters"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:drawableStart="@drawable/ic_date_to_gray"
+        android:text="@string/deadline"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/countingop_deadline_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_title" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+</LinearLayout>

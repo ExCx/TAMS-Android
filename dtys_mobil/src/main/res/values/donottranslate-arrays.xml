@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="label_type_list_18_standart">
+        <item>Ayniyat</item>
+        <item>Biyomedikal</item>
+        <item>Küçük</item>
+    </string-array>
+    <string-array name="label_type_values_18_standart">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="label_type_list_24_standart">
+        <item>Ayniyat</item>
+        <item>Ayniyat (Ayrıntılı)</item>
+        <item>Ayniyat (Ayrıntılı + Zimmet Yeri)</item>
+        <item>Biyomedikal</item>
+        <item>Biyomedikal (Kullanım Alanı)</item>
+        <item>Biyomedikal (Zimmet Yeri)</item>
+        <item>Küçük</item>
+    </string-array>
+    <string-array name="label_type_values_24_standart">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="label_type_list_36_standart">
+        <item>Ayniyat</item>
+        <item>Ayniyat (Ayrıntılı)</item>
+        <item>Biyomedikal</item>
+        <item>Küçük</item>
+        <item>Küçük (Logo)</item>
+        <item>Küçük (Logo + Tanım)</item>
+    </string-array>
+    <string-array name="label_type_values_36_standart">
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="label_type_list_18_mobil">
+        <item>Ayniyat</item>
+        <item>Biyomedikal</item>
+        <item>Küçük</item>
+    </string-array>
+    <string-array name="label_type_values_18_mobil">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="label_type_list_24_mobil">
+        <item>Ayniyat</item>
+        <item>Ayniyat (Ayrıntılı)</item>
+        <item>Biyomedikal</item>
+        <item>Biyomedikal (Zimmet Yeri)</item>
+        <item>Küçük</item>
+    </string-array>
+    <string-array name="label_type_values_24_mobil">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:mContext=".view.MainActivity">
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:textAllCaps="true"
+        android:inputType="textCapCharacters"/>
+    <item android:id="@+id/add_filter"
+        android:title="@string/filter_title"
+        android:icon="@drawable/ic_filter_list_white"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/add_filter_is_labeled"
+                android:title="@string/add_filter_is_labeled_title"
+                android:icon="@drawable/tag_gray"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_assignment"
+                android:title="@string/add_filter_assignment_title"
+                android:icon="@drawable/person_gray_24"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_deployment"
+                android:title="@string/add_filter_deployment_title"
+                android:icon="@drawable/location_gray_24"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_counting_status"
+                android:title="@string/add_filter_counting_status_title"
+                android:icon="@drawable/ic_check_box_gray_24dp"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_budget_type"
+                android:title="@string/add_filter_budget_type_title"
+                android:icon="@drawable/budget_type_gray"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_working_status"
+                android:title="@string/add_filter_working_status_title"
+                android:icon="@drawable/gears_gray"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_storage"
+                android:title="@string/add_filter_storage_title"
+                android:icon="@drawable/storage_gray"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/add_filter_price"
+                android:title="@string/add_filter_price_title"
+                android:icon="@drawable/money_gray"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/remove_filters"
+                android:title="@string/remove_filters_title"
+                android:icon="@drawable/clear_filters_gray"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+    <item android:id="@+id/sort"
+        android:title="@string/sort_title"
+        android:icon="@drawable/ic_sort_white"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/sort_by_definition"
+                android:title="@string/sort_by_definition_title"
+                android:icon="@drawable/tree_structure_gray"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/sort_by_assigned_person"
+                android:title="@string/sort_by_assigned_person_title"
+                android:icon="@drawable/person_gray_24"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/sort_by_assigned_location"
+                android:title="@string/sort_by_assigned_location_title"
+                android:icon="@drawable/location_gray_24"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/sort_by_last_control_date"
+                android:title="@string/sort_by_last_control_date_title"
+                android:icon="@drawable/ic_check_box_gray_24dp"
+                app:showAsAction="ifRoom"/>
+            <item android:id="@+id/sort_by_labeling_date"
+                android:title="@string/sort_by_labeling_date_title"
+                android:icon="@drawable/tag_gray"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+<!--    <item android:id="@+id/select_all"-->
+<!--        android:title="@string/select_all_title"-->
+<!--        android:icon="@drawable/ic_select_all_gray_24dp"-->
+<!--        app:showAsAction="ifRoom"/>-->
+</menu>

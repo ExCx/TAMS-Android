@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:mContext="com.frekanstan.dtys_mobil.view.login.LoginFragment">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_menu_asset_list_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/movable_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/asset_list_title" />
+
+        <Button
+            android:id="@+id/main_menu_location_list_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/location_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/location_list_title" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_menu_asset_type_list_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tree_structure_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/main_menu_asset_types" />
+
+        <Button
+            android:id="@+id/main_menu_employee_list_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/person_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/main_menu_person_list_title" />
+
+    </LinearLayout>
+</LinearLayout>

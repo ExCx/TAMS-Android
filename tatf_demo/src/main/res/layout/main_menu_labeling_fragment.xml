@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:mContext="com.frekanstan.tatf_demo.view.login.LoginFragment">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_menu_asset_labeling_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/movable_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/asset_labeling_title" />
+
+        <Button
+            android:id="@+id/main_menu_person_labeling_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/person_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/person_labeling_title" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_menu_location_labeling_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/location_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/location_labeling_title" />
+
+    </LinearLayout>
+</LinearLayout>

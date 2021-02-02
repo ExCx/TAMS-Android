@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/add_picture"
+        android:title="@string/add_picture_title"
+        android:icon="@drawable/ic_add_a_photo_white"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/main_picture"
+        android:title="@string/main_picture_title"
+        android:icon="@drawable/ic_star_border_white"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/delete_picture"
+        android:title="@string/delete_picture_title"
+        android:icon="@drawable/ic_delete_white"
+        app:showAsAction="ifRoom"/>
+</menu>

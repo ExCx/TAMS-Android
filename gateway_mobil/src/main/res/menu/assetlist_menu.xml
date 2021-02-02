@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:mContext=".view.MainActivity">
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:textAllCaps="true"
+        android:inputType="textCapCharacters"/>
+    <item android:id="@+id/report_counting"
+        android:title="@string/report_counting"
+        android:icon="@drawable/checklist_white"
+        app:showAsAction="ifRoom"/>
+</menu>

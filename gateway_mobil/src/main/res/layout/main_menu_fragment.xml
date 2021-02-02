@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:mContext="com.frekanstan.gateway_mobil.view.login.LoginFragment">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_menu_labeling_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/tags_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/labeling_title"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/main_menu_locate_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sensor_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/locate_title" />
+
+        <Button
+            android:id="@+id/main_menu_receive_assets_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/inspection_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/receive_assets_title" />
+
+        <Button
+            android:id="@+id/main_menu_send_assets_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/handcart_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/send_assets_title" />
+
+        <Button
+            android:id="@+id/main_menu_settings_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/settings_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/settings_title" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_menu_counting_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/counter_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/counting_ops_title" />
+
+        <Button
+            android:id="@+id/main_menu_storage_transfer_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/warehouse_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/storage_transfer_title" />
+
+        <Button
+            android:id="@+id/main_menu_logout_button"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/exit_96px"
+            android:drawableTint="@color/colorPrimary"
+            android:text="@string/logout_title" />
+
+    </LinearLayout>
+</LinearLayout>

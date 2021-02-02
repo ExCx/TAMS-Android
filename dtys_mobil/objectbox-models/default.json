@@ -1,0 +1,810 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7662473500509011469",
+      "lastPropertyId": "37:3859785013774179982",
+      "name": "Asset",
+      "properties": [
+        {
+          "id": "1:4612691628721232555",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2851633243609087058",
+          "name": "assetTypeId",
+          "indexId": "1:8436100640944091890",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "AssetType"
+        },
+        {
+          "id": "3:7724711919454256897",
+          "name": "assetTypeDefinition",
+          "type": 9
+        },
+        {
+          "id": "4:7753792904932280949",
+          "name": "remoteId",
+          "indexId": "2:3778539368735623809",
+          "type": 9,
+          "flags": 2048
+        },
+        {
+          "id": "5:595602364485289627",
+          "name": "registrationCode",
+          "type": 9
+        },
+        {
+          "id": "6:1767266689611078596",
+          "name": "features",
+          "type": 9
+        },
+        {
+          "id": "7:8856205928320327551",
+          "name": "brandNameId",
+          "indexId": "3:3652115248878402787",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Brand"
+        },
+        {
+          "id": "8:407953559758968366",
+          "name": "brandNameDefinition",
+          "type": 9
+        },
+        {
+          "id": "9:7047271877276770216",
+          "name": "modelNameId",
+          "indexId": "4:354690862489589639",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Model"
+        },
+        {
+          "id": "10:7910605689422982730",
+          "name": "modelNameDefinition",
+          "type": 9
+        },
+        {
+          "id": "11:1469917139863043037",
+          "name": "budgetTypeId",
+          "indexId": "5:4183423021435410990",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Budget"
+        },
+        {
+          "id": "12:1857240870204941515",
+          "name": "serialNo",
+          "type": 9
+        },
+        {
+          "id": "13:5246339056122007187",
+          "name": "rfidCode",
+          "indexId": "6:5630499613671206940",
+          "type": 9,
+          "flags": 40
+        },
+        {
+          "id": "14:6021205899563900818",
+          "name": "acquisitionYear",
+          "type": 3,
+          "flags": 2
+        },
+        {
+          "id": "15:3292081252804669929",
+          "name": "lotNo",
+          "type": 9
+        },
+        {
+          "id": "16:3119218940587721003",
+          "name": "price",
+          "type": 8,
+          "flags": 2
+        },
+        {
+          "id": "17:7158911982910544110",
+          "name": "assignedPersonId",
+          "indexId": "7:373085972273047269",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Person"
+        },
+        {
+          "id": "18:76153290912607144",
+          "name": "assignedPersonNameSurname",
+          "type": 9
+        },
+        {
+          "id": "19:4833542599827072980",
+          "name": "personToAssignId",
+          "indexId": "8:8100877637021453460",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Person"
+        },
+        {
+          "id": "20:9062411746011695372",
+          "name": "assignedLocationId",
+          "indexId": "9:4860849735356543471",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Location"
+        },
+        {
+          "id": "21:8149144819004735733",
+          "name": "locationToAssignId",
+          "indexId": "10:577438531415002833",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Location"
+        },
+        {
+          "id": "22:8128510142558233765",
+          "name": "assignedLocationName",
+          "type": 9
+        },
+        {
+          "id": "23:5395105102407538755",
+          "name": "storageBelongsToId",
+          "indexId": "11:3105998449151426436",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Location"
+        },
+        {
+          "id": "24:8837277165666797982",
+          "name": "workingState",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "25:5105354618856347980",
+          "name": "reasonOfFailure",
+          "type": 9
+        },
+        {
+          "id": "26:4851760167206145577",
+          "name": "warrantyPeriodInYears",
+          "type": 3,
+          "flags": 2
+        },
+        {
+          "id": "27:5374461906224409166",
+          "name": "biomedicalType",
+          "type": 9
+        },
+        {
+          "id": "28:233967915624570929",
+          "name": "biomedicalDefinition",
+          "type": 9
+        },
+        {
+          "id": "29:3772392283362405337",
+          "name": "biomedicalBranch",
+          "type": 9
+        },
+        {
+          "id": "30:3230804132577486135",
+          "name": "lastControlTime",
+          "type": 10
+        },
+        {
+          "id": "31:2948149975676563857",
+          "name": "labelingDateTime",
+          "type": 10
+        },
+        {
+          "id": "32:5716639738367185652",
+          "name": "placeOfUse",
+          "type": 9
+        },
+        {
+          "id": "33:4348482123470697271",
+          "name": "isDeleted",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "34:1852178272549716719",
+          "name": "hasPhoto",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "35:7035890343781112039",
+          "name": "isUpdated",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "36:4553454896150652422",
+          "name": "tempCounted",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "37:3859785013774179982",
+          "name": "tenantId",
+          "indexId": "12:5177204139893771515",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Tenant"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:3745037623508616936",
+      "lastPropertyId": "7:699058816355188243",
+      "name": "AssetType",
+      "properties": [
+        {
+          "id": "1:5175126644648862183",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7517403846401063744",
+          "name": "definition",
+          "type": 9
+        },
+        {
+          "id": "3:1088010283868935945",
+          "name": "assetCode",
+          "type": 9
+        },
+        {
+          "id": "4:6894224992780710414",
+          "name": "remoteId",
+          "type": 9
+        },
+        {
+          "id": "5:623195305992254790",
+          "name": "parentTypeId",
+          "indexId": "13:8875455292255946204",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "AssetType"
+        },
+        {
+          "id": "6:5939325192725541988",
+          "name": "isActive",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "7:699058816355188243",
+          "name": "depth",
+          "type": 5,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:4242660975432985700",
+      "lastPropertyId": "5:6367290654495825952",
+      "name": "AssignmentChange",
+      "properties": [
+        {
+          "id": "1:474037553902668692",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7245936723372217459",
+          "name": "assetId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "3:5292500350823944340",
+          "name": "personId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "4:2846959391604688594",
+          "name": "locationId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "5:6367290654495825952",
+          "name": "sent",
+          "type": 1,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:8110359824527792914",
+      "lastPropertyId": "3:3980646712644864344",
+      "name": "Brand",
+      "properties": [
+        {
+          "id": "1:300871946197716407",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:4151000310023114366",
+          "name": "definition",
+          "type": 9
+        },
+        {
+          "id": "3:3980646712644864344",
+          "name": "parentTypeId",
+          "indexId": "14:32838932286732930",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "AssetType"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:7783181395393082681",
+      "lastPropertyId": "2:1023370012737496831",
+      "name": "Budget",
+      "properties": [
+        {
+          "id": "1:6185105761766095129",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:1023370012737496831",
+          "name": "definition",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:1962297208980089411",
+      "lastPropertyId": "5:2034832641106920668",
+      "name": "CountedStateChange",
+      "properties": [
+        {
+          "id": "1:3017354767885916613",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7059520579206265374",
+          "name": "assetId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "3:7885657144338635029",
+          "name": "lastControlTime",
+          "type": 10
+        },
+        {
+          "id": "4:6571822940914982092",
+          "name": "countingOpId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "5:2034832641106920668",
+          "name": "globalId",
+          "type": 6,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:5404142946750899014",
+      "lastPropertyId": "15:4874625988539087745",
+      "name": "CountingOp",
+      "properties": [
+        {
+          "id": "1:2263472379654578898",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1412699829713897166",
+          "name": "globalId",
+          "indexId": "15:4620241412486562651",
+          "type": 6,
+          "flags": 12
+        },
+        {
+          "id": "3:5584418790422310909",
+          "name": "personCreatedId",
+          "indexId": "16:3930738194233857559",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Person"
+        },
+        {
+          "id": "4:1527605485299608868",
+          "name": "personTaskedId",
+          "indexId": "17:877815363067462672",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Person"
+        },
+        {
+          "id": "5:2307604959014717196",
+          "name": "creationTime",
+          "type": 10
+        },
+        {
+          "id": "6:7570221517993303179",
+          "name": "deadline",
+          "type": 10
+        },
+        {
+          "id": "7:4455080635455869394",
+          "name": "timeStarted",
+          "type": 10
+        },
+        {
+          "id": "8:2778732747222364249",
+          "name": "timeFinished",
+          "type": 10
+        },
+        {
+          "id": "9:2357334431239456803",
+          "name": "relatedTypeId",
+          "indexId": "18:8757560973612755433",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "AssetType"
+        },
+        {
+          "id": "10:4066480237132363364",
+          "name": "relatedLocationId",
+          "indexId": "19:6888631603612746527",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Location"
+        },
+        {
+          "id": "11:937811305270383544",
+          "name": "relatedPersonId",
+          "indexId": "20:4669644444751139575",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Person"
+        },
+        {
+          "id": "12:6693915155977951437",
+          "name": "isConfirmed",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "13:4252891518155566814",
+          "name": "isDeleted",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "14:808782979558489109",
+          "name": "isUpdated",
+          "type": 1,
+          "flags": 2
+        },
+        {
+          "id": "15:4874625988539087745",
+          "name": "tenantId",
+          "indexId": "21:2341775036613753565",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Tenant"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:965196194045143782",
+          "name": "countedAssets",
+          "targetId": "1:7662473500509011469"
+        }
+      ]
+    },
+    {
+      "id": "8:5539384278081255230",
+      "lastPropertyId": "5:8621838050628879385",
+      "name": "ImageToUpload",
+      "properties": [
+        {
+          "id": "1:71914821749707856",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4841865698821660179",
+          "name": "type",
+          "type": 9
+        },
+        {
+          "id": "3:3684786785563411957",
+          "name": "path",
+          "type": 9
+        },
+        {
+          "id": "4:4084628938608830663",
+          "name": "delete",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "5:8621838050628879385",
+          "name": "makeMain",
+          "type": 1,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "9:8256126808864400665",
+      "lastPropertyId": "4:1258780395984525261",
+      "name": "LabeledStateChange",
+      "properties": [
+        {
+          "id": "1:6055511229931910081",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3849824696862530715",
+          "name": "type",
+          "type": 9
+        },
+        {
+          "id": "3:684470811832052766",
+          "name": "entityId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "4:1258780395984525261",
+          "name": "labelingDateTime",
+          "type": 10
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "10:3922667311922400141",
+      "lastPropertyId": "9:2130073322987971004",
+      "name": "Location",
+      "properties": [
+        {
+          "id": "1:866655433256112502",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:3528667937622776371",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2283994365130512510",
+          "name": "shortName",
+          "type": 9
+        },
+        {
+          "id": "4:8263606545398436376",
+          "name": "remoteId",
+          "type": 9
+        },
+        {
+          "id": "5:7859145949132147750",
+          "name": "locationType",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "6:848489167187435620",
+          "name": "labelingDateTime",
+          "type": 10
+        },
+        {
+          "id": "7:6094381001915641222",
+          "name": "parentLocationId",
+          "indexId": "22:4818945066523775057",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Location"
+        },
+        {
+          "id": "8:3233466000656875875",
+          "name": "tenantBoundId",
+          "indexId": "23:1194961983663226716",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Tenant"
+        },
+        {
+          "id": "9:2130073322987971004",
+          "name": "tenantId",
+          "indexId": "24:9181483219210665547",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Tenant"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "11:8276425996612844830",
+      "lastPropertyId": "3:2219774810160044286",
+      "name": "Model",
+      "properties": [
+        {
+          "id": "1:2013087463324425435",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:8162247471002747276",
+          "name": "definition",
+          "type": 9
+        },
+        {
+          "id": "3:2219774810160044286",
+          "name": "parentBrandId",
+          "indexId": "25:6003542967452004641",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Brand"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "12:5464022260155946668",
+      "lastPropertyId": "9:5813945933575426027",
+      "name": "Person",
+      "properties": [
+        {
+          "id": "1:8401693166906089598",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5602254624762230670",
+          "name": "personType",
+          "type": 5,
+          "flags": 2
+        },
+        {
+          "id": "3:1572881265290353068",
+          "name": "nameSurname",
+          "type": 9
+        },
+        {
+          "id": "4:3616209685535402293",
+          "name": "identityNo",
+          "type": 9
+        },
+        {
+          "id": "5:2551953816492699506",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "6:3227526422372424560",
+          "name": "labelingDateTime",
+          "type": 10
+        },
+        {
+          "id": "7:970935568831102602",
+          "name": "userBoundId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "8:1731177677628034800",
+          "name": "hasPhoto",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "9:5813945933575426027",
+          "name": "tenantId",
+          "indexId": "26:3487819773947591786",
+          "type": 11,
+          "flags": 524,
+          "relationTarget": "Tenant"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "13:4623828678000000220",
+      "lastPropertyId": "3:3173046002462451069",
+      "name": "Setting",
+      "properties": [
+        {
+          "id": "1:6668265258085555726",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3449109289237938434",
+          "name": "name",
+          "indexId": "27:768142878781049192",
+          "type": 9,
+          "flags": 2080
+        },
+        {
+          "id": "3:3173046002462451069",
+          "name": "value",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "14:1246538733957584080",
+      "lastPropertyId": "4:1014016003225185488",
+      "name": "Tenant",
+      "properties": [
+        {
+          "id": "1:3525002869683040619",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2914324751159299300",
+          "name": "tenancyName",
+          "type": 9
+        },
+        {
+          "id": "3:2198697764936508391",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "4:1014016003225185488",
+          "name": "isActive",
+          "type": 1,
+          "flags": 2
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "14:1246538733957584080",
+  "lastIndexId": "27:768142878781049192",
+  "lastRelationId": "1:965196194045143782",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

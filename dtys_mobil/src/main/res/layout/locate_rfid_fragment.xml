@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/locate_rfid_card_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/grey_200"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/locate_rfid_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image_desc"
+                android:padding="@dimen/margin_medium"
+                android:scaleType="fitCenter" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/locate_rfid_card_info_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin_small">
+
+            <TextView
+                android:id="@+id/locate_rfid_card_title"
+                style="@style/TitleText" />
+
+            <TextView
+                android:id="@+id/locate_rfid_card_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/PlainTextSingleLine"
+                android:drawableStart="@drawable/hash_gray_24"
+                android:drawablePadding="@dimen/margin_small" />
+
+        </LinearLayout>
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/locate_rfid_progress_bar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="@dimen/margin_small"
+            custom:arc_progress="0"
+            custom:arc_stroke_width="@dimen/margin_medium"
+            custom:arc_unfinished_color="@color/white"
+            custom:arc_finished_color="?android:attr/colorPrimary"
+            custom:arc_text_size="@dimen/arc_progress_text_size"
+            custom:arc_suffix_text_padding="0dp"
+            custom:arc_text_color="?android:attr/colorPrimary"/>
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/locate_rfid_list_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

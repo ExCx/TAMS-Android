@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="label_type_list_18_standart">
+        <item>Malzeme Türü ve Sicil No</item>
+    </string-array>
+    <string-array name="label_type_values_18_standart">
+        <item>1</item>
+    </string-array>
+    <string-array name="label_type_list_24_standart">
+        <item>Malzeme Türü ve Sicil No</item>
+    </string-array>
+    <string-array name="label_type_values_24_standart">
+        <item>2</item>
+    </string-array>
+    <string-array name="label_type_list_36_standart">
+        <item>Malzeme Türü ve Sicil No</item>
+    </string-array>
+    <string-array name="label_type_values_36_standart">
+        <item>3</item>
+    </string-array>
+    <string-array name="label_type_list_18_mobil">
+        <item>Malzeme Türü ve Sicil No</item>
+    </string-array>
+    <string-array name="label_type_values_18_mobil">
+        <item>1</item>
+    </string-array>
+    <string-array name="label_type_list_24_mobil">
+        <item>Malzeme Türü ve Sicil No</item>
+    </string-array>
+    <string-array name="label_type_values_24_mobil">
+        <item>2</item>
+    </string-array>
+</resources>

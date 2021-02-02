@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tag_no_status">
+        <item>Künyesizler</item>
+        <item>Künyeliler</item>
+    </string-array>
+    <string-array name="label_status">
+        <item>Etiketsizler</item>
+        <item>Etiketliler</item>
+    </string-array>
+    <string-array name="assignment_status">
+        <item>Stoktakiler</item>
+        <item>Kullanımdakiler</item>
+    </string-array>
+    <string-array name="deployment_status">
+        <item>Yerleştirilmemişler</item>
+        <item>Konumlular</item>
+    </string-array>
+    <string-array name="counting_status">
+        <item>Görülmemişler</item>
+        <item>Görülmüşler</item>
+    </string-array>
+    <string-array name="working_status">
+        <item>Bilinmiyor</item>
+        <item>Aktif</item>
+        <item>Pasif</item>
+        <item>Arızalı</item>
+    </string-array>
+    <string-array name="budget_types">
+        <item>Genel Bütçe</item>
+        <item>Döner Sermaye</item>
+        <item>Özel Bütçe</item>
+    </string-array>
+    <string-array name="printer_model_list">
+        <item>PT_E550W</item>
+        <item>PT_P900W</item>
+        <item>PT_P950NW</item>
+        <item>PT_P750W</item>
+    </string-array>
+    <string-array name="label_size_list_standart">
+        <item>18mm</item>
+        <item>24mm</item>
+        <item>36mm</item>
+    </string-array>
+    <string-array name="label_size_values_standart">
+        <item>W18</item>
+        <item>W24</item>
+        <item>W36</item>
+    </string-array>
+    <string-array name="label_size_list_mobil">
+        <item>18mm</item>
+        <item>24mm</item>
+    </string-array>
+    <string-array name="label_size_values_mobil">
+        <item>W18</item>
+        <item>W24</item>
+    </string-array>
+    <string-array name="label_cut_list">
+        <item>Zincir Baskı</item>
+        <item>Tek Baskı</item>
+    </string-array>
+    <string-array name="label_cut_values">
+        <item>ZINCIR</item>
+        <item>TEK</item>
+    </string-array>
+    <string-array name="barcode_device_model_list">
+        <item>Cihaz Kamerası</item>
+        <item>Hopeland HL7202K8</item>
+        <item>Miocare-Miowork</item>
+        <item>NordicID HH53</item>
+    </string-array>
+    <string-array name="barcode_device_model_values">
+        <item>KAMERA</item>
+        <item>HL7202K8</item>
+        <item>MIO</item>
+        <item>HH53</item>
+    </string-array>
+    <string-array name="rfid_device_model_list">
+        <item>Hopeland HL7202K8</item>
+        <item>NordicID HH53</item>
+        <item>TSL 1128</item>
+    </string-array>
+    <string-array name="rfid_device_model_values">
+        <item>HL7202K8</item>
+        <item>HH53</item>
+        <item>1128</item>
+    </string-array>
+    <string-array name="price_filter_types">
+        <item>TL\'ye eşit</item>
+        <item>TL ve altı</item>
+        <item>TL ve üstü</item>
+        <item>TL civarı (+-100TL)</item>
+        <item>TL civarı (+-1000TL)</item>
+    </string-array>
+    <string-array name="countingop_types">
+        <item>GENEL</item>
+        <item>LOKASYON</item>
+        <item>DEPO</item>
+        <item>KİŞİ</item>
+<!--        <item>MALZEME TÜRÜ</item>-->
+    </string-array>
+</resources>

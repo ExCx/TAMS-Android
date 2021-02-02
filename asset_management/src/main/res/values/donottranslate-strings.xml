@@ -1,0 +1,108 @@
+<resources>
+    <!-- GENERAL -->
+    <string name="root_folder_name">Frekanstan</string>
+    <string name="photos_folder_name">Resimler</string>
+    <!-- ACTION TITLES -->
+    <string name="back_title">Geri Dön</string>
+    <string name="search_title">Arama</string>
+    <string name="print_title">Yazdır</string>
+    <string name="assign_title">Kullanıma Ver</string>
+    <string name="retire_title">Çıkışını Al</string>
+    <string name="cancel_title">İptal</string>
+    <string name="image_desc">Taşınır resmi</string>
+    <string name="description_zoom_touch_close">Resmi Büyüt</string>
+    <!-- ASSET LIST -->
+    <string name="search_hint">Ara&#8230;</string>
+    <string name="unassigned_location">LOKASYON BELİRSİZ</string>
+    <string name="unassigned_employee">KULLANIMA VERİLMEMİŞ</string>
+    <string name="selected_count">%1$d taşınır seçildi</string>
+    <string name="selected_person_count">%1$d kişi seçildi</string>
+    <string name="selected_location_count">%1$d lokasyon seçildi</string>
+    <!-- PRINTING -->
+    <string name="wait_reaching_printer">Yazıcıya erişim sağlanıyor</string>
+    <string name="wait_printing_labels">Etiketler basılıyor (%d/%d)</string>
+    <string name="wait_canceling">İptal ediliyor</string>
+    <!-- ASSET DETAILS (ID) -->
+    <string name="registration_no">Sicil No</string>
+    <string name="tag_no">Künye No</string>
+    <string name="budget_type">Bütçe Türü</string>
+    <string name="spending_unit">Harcama Birimi</string>
+    <string name="price">Fiyat</string>
+    <!-- ASSET DETAILS (GENERAL) -->
+    <string name="category_name">Kategori</string>
+    <string name="description">Açıklama</string>
+    <string name="brand">Marka</string>
+    <string name="model">Model</string>
+    <string name="serial_no">Seri No</string>
+    <string name="upper_category">Üst Kategori</string>
+    <string name="temp_barcode">Özel Barkod</string>
+    <!-- ASSET DETAILS (ASSIGNMENT) -->
+    <string name="assigned_employee">Sorumlu Personel</string>
+    <string name="person_tasked">Görevli Yetkili</string>
+    <string name="assigned_room_name">Bulunduğu Yer</string>
+    <string name="assignment_date">Verilme Tarihi</string>
+    <!-- ASSET DETAILS (MAINTENANCE) -->
+    <string name="status">Son Durum</string>
+    <string name="first_acquisition_date">Edinme Tarihi</string>
+    <string name="warranty_period">Garanti Süresi (Yıl)</string>
+    <string name="year_postfix">%s YIL</string>
+    <string name="warranty_end_date">Garanti Bitiş Tarihi</string>
+    <string name="working_status">Çalışma Durumu</string>
+    <string name="reason_of_failure">Çalışmama Nedeni</string>
+    <string name="vendor_company">Alındığı Firma</string>
+    <string name="production_year">Üretim Yılı</string>
+    <string name="lot_no">Lot/Parti No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_op_title">İşlemi Sil</string>
+    <string name="delete_picture_title">Resmi Sil</string>
+    <string name="main_picture_title">Ana Resim Yap</string>
+    <string name="alert_query_deleting_photo">Fotoğraf silinecek. Onaylıyor musunuz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+    <string name="confirm">Onayla</string>
+    <string name="picture_deleted">Fotoğraf silindi</string>
+    <string name="cannot_delete_picture">Fotoğraf silinemedi</string>
+    <string name="already_main_picture">Ana fotoğraf zaten bu</string>
+    <string name="main_picture_selected">Ana fotoğraf seçildi</string>
+    <string name="add_picture_title">Resim Ekle</string>
+    <string name="change_type_title">Liste Tipini Değiştir</string>
+    <string name="filter_title">Filtre Ekle</string>
+    <string name="search_result_no_asset_found">Arama sonucu hiç taşınır bulunamadı</string>
+    <string name="add_filter_price_title">Fiyat</string>
+    <string name="add_filter_status_dialog_title">Listede görmek istediklerinizi işaretleyin</string>
+    <string name="add_filter_budget_type_title">Bütçe Türü</string>
+    <string name="add_filter_status_title">Durum</string>
+    <string name="settings_title">Ayarlar</string>
+    <string name="sort_title">Listeyi Sırala</string>
+    <string name="cannot_find_printer_dialog_message">Yazıcıya erişim sağlanamadı. Cihazın açık olduğuna
+        ve ayarlardan doğru modeli seçtiğinize emin olun. Bağlantıyı kontrol etmek için kablosuz ayarlarına göz atın.</string>
+    <string name="wireless_settings">Kablosuz Ayarları</string>
+    <string name="templates_folder_name">Taslaklar</string>
+    <string name="tenant_info">Müşteri Bilgileri</string>
+    <string name="company_name_prefs">Kurum Adı</string>
+    <string name="main_company_name_prefs">Birlik Adı</string>
+    <string name="printer_prefs">Yazıcı Ayarları</string>
+    <string name="printer_model_prefs">Yazıcı Modeli</string>
+    <string name="label_size_prefs">Etiket Boyutu</string>
+    <string name="label_cut_prefs">Kesim Ayarı</string>
+    <string name="label_type_prefs">Etiket Formatı</string>
+    <string name="no_printer_selected_dialog_message">Yazıcı tanımlanmamış gözüküyor. Ayarlar menüsünden model seçimi yapın.</string>
+    <string name="goto_preferences">Ayarlara Git</string>
+    <string name="no_label_selected_dialog_message">Etiket boyutu seçilmemiş. Ayarlar menüsünden etiket seçimi yapın.</string>
+    <string name="number_assets">%1$d adet taşınır</string>
+    <string name="number_person">%1$d kişi</string>
+    <string name="number_location">%1$d lokasyon</string>
+    <string name="number_operation">%1$d işlem</string>
+    <string name="number_asset_types">%1$d malzeme türü</string>
+    <string name="number_countingops">%1$d sayım işlemi</string>
+    <string name="number_receipt">%1$d adet fiş</string>
+    <string name="filter_limit_reached">En fazla 4 adet filtre eklenebilir</string>
+    <string name="price_filter_limit_reached">En fazla 2 adet fiyat filtresi eklenebilir</string>
+    <string name="app_name">Tagofid Sayım Modülü</string>
+    <string name="assignment_doc_no">Zimmet Belge No</string>
+    <string name="assignment_dialog_title">Kullanım Bilgisi Güncelleme</string>
+    <string name="reader_prefs">Okuyucu Ayarları</string>
+    <string name="device_is_not_connected">Cihaz bağlı değil</string>
+</resources>

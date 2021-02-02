@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <string name="web_service_url">http://192.168.1.34:45455/</string>
+-->
+    <string name="web_service_url">http://185.141.33.75:86/</string>
+    <string name="qrcode_contains">ShowAsset?</string>
+    <string name="barcode_prefix">http://185.141.33.75:86/Assets/ShowAsset?id=</string>
+    <string name="labeling_title">ETİKETLEME</string>
+    <string name="counting_title">SAYIM</string>
+    <string name="lists_title">LİSTELER</string>
+    <string name="locate_title">KONUM TESPİT</string>
+    <string name="logout_title">OTURUMU KAPAT</string>
+    <string name="main_menu_person_list_title">PERSONEL LİSTESİ</string>
+    <string name="asset_list_title">MALZEME LİSTESİ</string>
+    <string name="main_menu_asset_types">TÜR LİSTESİ</string>
+    <string name="location_list_title">LOKASYON LİSTESİ</string>
+    <string name="main_menu">Ana Menü</string>
+    <string name="lists">Listeler</string>
+    <string name="location_list">Lokasyon Listesi</string>
+    <string name="type_list">Tür Listesi</string>
+    <string name="employee_list">Personel Listesi</string>
+    <string name="settings">Ayarlar</string>
+    <string name="rfid_labeling">RFID Etiketleme</string>
+    <string name="asset_list">Malzeme Listesi</string>
+    <string name="by_location_title">LOKASYONA GÖRE</string>
+    <string name="by_type_title">TÜRE GÖRE</string>
+    <string name="by_responsible_title">SORUMLUYA GÖRE</string>
+    <string name="counting_ops_title">SAYIM İŞLEMLERİ</string>
+    <string name="counted">GÖRÜLDÜ</string>
+    <string name="not_counted">GÖRÜLMEDİ</string>
+    <string name="counting_ops">Sayım İşlemleri</string>
+    <string name="counting_op">Sayım İşlemi</string>
+    <string name="general_counting">Genel Sayım</string>
+    <string name="by_type">Türe Göre</string>
+    <string name="by_location">Lokasyona Göre</string>
+    <string name="by_person">Sorumluya Göre</string>
+    <string name="labeling">Etiketleme</string>
+    <string name="general_labeling_title">GENEL ETİKETLEME</string>
+    <string name="scan_the_rfid_tag_to_overwrite">Üstüne yazdırmak istediğiniz RFID etiketini cihazı yaklaştırarak taratın</string>
+    <string name="first_scan_the_qrcode_to_transfer">Önce aktarmak istediğiniz karekodu okutun ya da listeden seçin</string>
+    <string name="code_is_transferred_successfully">Kod etikete başarıyla aktarıldı</string>
+    <string name="scanned_label_not_printed_single_rfid">Okuttuğunuz karekod sistemde yazdırılmamış olarak gözüküyor. Etiketli olarak işaretleyebilir, yeni etiket yazdırabilir ya da bu kodu RFID etikete işleyebilirsiniz.</string>
+    <string name="scanned_label_not_printed_single">Okuttuğunuz karekod sistemde yazdırılmamış olarak gözüküyor. Etiketli olarak işaretleyebilir ya da yeni etiket yazdırabilirsiniz.</string>
+    <string name="clicked_label_not_printed_single_rfid">Karekod etiketi yazdırabilir ya da ilgili kodu RFID etikete aktarabilirsiniz.</string>
+    <string name="clicked_label_already_printed_single_rfid">\"%1$s\" kimlik numarasını RFID etikete aktarabilir ya da tekrar karekod etiketi yazdırabilirsiniz.</string>
+    <string name="clicked_label_not_printed_single">Karekod etiketi yazdırmak için onaylayınız.</string>
+    <string name="clicked_label_already_printed_single">Karekod etiketi sistemde zaten yazdırılmış gözüküyor. Yeniden yazdırabilir ya da "etiketsiz" olarak işaretleyebilirsiniz.</string>
+    <string name="mark_as_not_labeled">ETİKETSİZ OLARAK İŞARETLE</string>
+    <string name="labeled">ETİKETLİ</string>
+    <string name="foreign">YABANCI</string>
+    <string name="asset_labeling_title">TAŞINIR ETİKETLEME</string>
+    <string name="person_labeling_title">PERSONEL ETİKETLEME</string>
+    <string name="location_labeling_title">LOKASYON ETİKETLEME</string>
+    <string name="asset_labeling">Taşınır Etiketleme</string>
+    <string name="person_labeling">Personel Etiketleme</string>
+    <string name="location_labeling">Lokasyon Etiketleme</string>
+    <string name="view_assets_of_location">LOKASYON İÇERİĞİNİ GÖRÜNTÜLE</string>
+    <string name="selected_assets_will_be_marked_as_labeled">Seçili taşınırlar etiketli olarak işaretlenecek. Onaylıyor musunuz?</string>
+    <string name="selected_locations_will_be_marked_as_labeled">Seçili lokasyonlar etiketli olarak işaretlenecek. Onaylıyor musunuz?</string>
+    <string name="selected_persons_will_be_marked_as_labeled">Seçili kişiler etiketli olarak işaretlenecek. Onaylıyor musunuz?</string>
+    <string name="view_assets_of_person">TAŞINIRLARI GÖRÜNTÜLE</string>
+    <string name="locate">Konum Tespit</string>
+    <string name="barcode_device_model">Barkod Okuyucu Modeli</string>
+    <string name="pair_rfid_reader">RFID Okuyucu Eşleştir</string>
+    <string name="rfid_device_model">RFID Okuyucu Modeli</string>
+    <string name="select_rfid_device">RFID Okuyucu Seçimi</string>
+    <string name="assignment_operation_underway">Kullanım bilgisi güncellendi</string>
+    <string name="remove_asset_from_foreign_list">TAŞINIRI LİSTEDEN ÇIKAR</string>
+    <string name="rfid_prefix">C05E</string>
+    <string name="nullify_counting">Sayımı Sıfırla</string>
+    <string name="alert_nullify_counting">Sayımı işlemi sıfırlanacak. Onaylıyor musunuz?</string>
+    <string name="report_counting">Sayımı Raporla</string>
+    <string name="wifi">Wifi</string>
+    <string name="rfid">Rfid</string>
+</resources>

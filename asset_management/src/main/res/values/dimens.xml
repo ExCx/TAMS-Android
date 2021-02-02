@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="asset_detail_label_text_size">16sp</dimen>
+    <dimen name="asset_detail_content_text_size">18sp</dimen>
+    <dimen name="arc_progress_text_size">24sp</dimen>
+    <dimen name="design_fab_size_normal" tools:override="true">72dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">36dp</dimen>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:mContext=".view.MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main_menu"
+            android:title="@string/main_menu"
+            android:icon="@drawable/ic_home" />
+
+        <item android:id="@+id/nav_settings"
+            android:title="@string/nav_title_settings"
+            android:icon="@drawable/ic_settings_white"
+            app:showAsAction="ifRoom" />
+
+        <item android:id="@+id/nav_logout"
+            android:title="@string/nav_title_logout"
+            android:icon="@drawable/ic_logout_white"
+            app:showAsAction="ifRoom" />
+
+        <item android:title="@string/labeling">
+            <menu>
+                <item
+                    android:id="@+id/nav_asset_labeling"
+                    android:icon="@drawable/movable_96px"
+                    android:title="@string/asset_labeling" />
+                <item
+                    android:id="@+id/nav_location_labeling"
+                    android:icon="@drawable/location_96px"
+                    android:title="@string/location_labeling" />
+                <item
+                    android:id="@+id/nav_person_labeling"
+                    android:icon="@drawable/person_96px"
+                    android:title="@string/person_labeling" />
+            </menu>
+        </item>
+
+        <item android:title="@string/counting_ops">
+            <menu>
+                <item
+                    android:id="@+id/nav_general_counting"
+                    android:icon="@drawable/movable_96px"
+                    android:title="@string/general_counting" />
+                <item
+                    android:id="@+id/nav_by_type_counting"
+                    android:icon="@drawable/tree_structure_96px"
+                    android:title="@string/by_type" />
+                <item
+                    android:id="@+id/nav_by_location_counting"
+                    android:icon="@drawable/location_96px"
+                    android:title="@string/by_location" />
+                <item
+                    android:id="@+id/nav_by_responsible_counting"
+                    android:icon="@drawable/person_96px"
+                    android:title="@string/by_person" />
+            </menu>
+        </item>
+
+        <item android:id="@+id/nav_locate"
+            android:title="@string/locate"
+            android:icon="@drawable/sensor_96px"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

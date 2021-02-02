@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="693dp"
+    android:layout_height="204dp"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/asset_label_asset_type_def"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:lineSpacingExtra="2sp"
+                android:maxLength="80"
+                android:maxLines="2"
+                android:text="TAŞINIR ADI"
+                android:textColor="@color/black"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform" />
+
+
+            <TextView
+                android:id="@+id/asset_label_reg_no"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="SİCİL NO"
+                android:textColor="@color/black"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/asset_label_qr_image"
+            android:layout_width="198dp"
+            android:layout_height="198dp"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_small"
+            app:srcCompat="@drawable/qrcode_gray" />
+    </LinearLayout>
+
+</LinearLayout>

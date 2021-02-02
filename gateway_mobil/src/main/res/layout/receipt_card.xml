@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true">
+    <TextView
+        android:id="@+id/receipt_card_remote_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginEnd="4dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+        <LinearLayout
+            android:id="@+id/receipt_card_body_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@color/grey_200"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/receipt_card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/image_desc"
+                    android:padding="@dimen/margin_medium"
+                    android:scaleType="fitCenter"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/countingop_card_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/receipt_card_receipt_no"
+                    android:drawableStart="@drawable/hash_gray_24"
+                    style="@style/TitleText"/>
+
+                <TextView
+                    android:id="@+id/receipt_card_current_account_name"
+                    android:drawableStart="@drawable/budget_type_gray"
+                    style="@style/ListText"/>
+                <TextView
+                    android:id="@+id/receipt_card_receipt_date"
+                    style="@style/PlainTextSingleLine"
+                    android:drawableStart="@drawable/ic_date_from_gray"
+                    android:drawablePadding="@dimen/margin_small" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+    </LinearLayout>
+</LinearLayout>

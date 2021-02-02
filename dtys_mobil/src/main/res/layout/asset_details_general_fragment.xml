@@ -1,0 +1,138 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:mContext="com.frekanstan.dtys_mobil.view.assetdetails.AssetDetailsGeneralFragment"
+    android:id="@+id/asset_details_general_list"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/asset_type" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_asset_type"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/featuresB">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/features" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_features"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/brand" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_brand"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/model" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_model"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/serial_no" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_serial_no"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/asset_details_bio_type_container">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/biomedical_type" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_bio_type"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/asset_details_bio_definition_container">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/biomedical_definition" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_bio_definition"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout"
+            android:id="@+id/asset_details_bio_branch_container">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/biomedical_branch" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_bio_branch"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/first_acquisition_year" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_acquisition_year"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/storage_belongs" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_storage_belongs"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/ClickableTextLayout">
+            <TextView
+                style="@style/TitleText"
+                android:text="@string/rfid_code" />
+            <TextView
+                style="@style/PlainText"
+                android:id="@+id/asset_details_rfid_code"/>
+            <View
+                style="@style/ListDividerView"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

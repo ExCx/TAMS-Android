@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.frekanstan.dtys_mobil",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 13,
+      "versionName": "1.0.12",
+      "outputFile": "dtys_mobil-release.apk"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="label_type_list_18_standart">
+        <item>Kimlik</item>
+        <item>Zimmet</item>
+        <item>Karekod</item>
+    </string-array>
+    <string-array name="label_type_values_18_standart">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="label_type_list_24_standart">
+        <item>Kimlik</item>
+        <item>Zimmet</item>
+        <item>Karekod</item>
+    </string-array>
+    <string-array name="label_type_values_24_standart">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="label_type_list_36_standart">
+        <item>Kimlik</item>
+        <item>Zimmet</item>
+        <item>Karekod</item>
+    </string-array>
+    <string-array name="label_type_values_36_standart">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="label_type_list_18_mobil">
+        <item>Kimlik</item>
+        <item>Zimmet</item>
+        <item>Karekod</item>
+    </string-array>
+    <string-array name="label_type_values_18_mobil">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="label_type_list_24_mobil">
+        <item>Kimlik</item>
+        <item>Zimmet</item>
+        <item>Karekod</item>
+    </string-array>
+    <string-array name="label_type_values_24_mobil">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>
