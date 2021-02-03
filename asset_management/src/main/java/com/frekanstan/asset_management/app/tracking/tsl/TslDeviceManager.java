@@ -25,6 +25,9 @@ import com.uk.tsl.rfid.asciiprotocol.enumerations.SwitchAction;
 import com.uk.tsl.utils.HexEncoding;
 import com.uk.tsl.utils.Observable;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.val;
@@ -142,10 +145,15 @@ public class TslDeviceManager implements IRfidDeviceManager {
         ReaderManager.sharedInstance().onResume();
         ReaderManager.sharedInstance().updateList();
         try {
-            val serial = name.split("-")[2] + "-" + name.split("-")[1] + "-" + name.split("-")[0];
+            var splittedName = Arrays.asList(name.split("-"));
+            Collections.reverse(splittedName);
+            var serial = new StringBuilder(splittedName.get(0));
+            for (int i = 1; i < splittedName.size(); i++)
+                serial.append("-").append(splittedName.get(i));
+            //val serial = name.split("-")[2] + "-" + name.split("-")[1] + "-" + name.split("-")[0];
             val list = ReaderManager.sharedInstance().getReaderList().list();
             for (val device : list) {
-                if (serial.equals(device.getSerialNumber())) {
+                if (serial.toString().toString().equals(device.getSerialNumber())) {
                     reader = device;
                     lastUserDisconnectedReader = null;
                     getCommander().setReader(reader);

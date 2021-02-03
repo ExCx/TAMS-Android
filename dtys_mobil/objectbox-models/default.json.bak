@@ -290,7 +290,7 @@
     },
     {
       "id": "3:4242660975432985700",
-      "lastPropertyId": "6:5793707360980288766",
+      "lastPropertyId": "5:6367290654495825952",
       "name": "AssignmentChange",
       "properties": [
         {
@@ -322,12 +322,6 @@
           "name": "sent",
           "type": 1,
           "flags": 4
-        },
-        {
-          "id": "6:5793707360980288766",
-          "name": "isRequest",
-          "type": 1,
-          "flags": 2
         }
       ],
       "relations": []

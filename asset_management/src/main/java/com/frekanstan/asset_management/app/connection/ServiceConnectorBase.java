@@ -243,7 +243,7 @@ public class ServiceConnectorBase {
         Map<String, Object> params = mMapper.convertValue(input, Map.class);
         ObjectRequest<AbpResult<Boolean>> objectRequest = new ObjectRequest<>(
                 Request.Method.POST,
-                serviceUrl + "api/services/app/asset/ChangeAssignmentState",
+                serviceUrl + "api/services/app/assignment/ChangeAssignmentState",
                 AbpResult.class,
                 params,
                 null,

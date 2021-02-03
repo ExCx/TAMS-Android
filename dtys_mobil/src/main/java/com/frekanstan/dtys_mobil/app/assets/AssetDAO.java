@@ -155,10 +155,10 @@ public class AssetDAO extends AssetDAOBase<Asset> {
     }
 
     @Override
-    public void setAssignmentChange(long assetId, long personId, long locationId) {
+    public void setAssignmentChange(long assetId, long personId, long locationId, boolean isRequest) {
         var ac = getAssignmentChange(assetId);
         if (ac == null)
-            ac = new AssignmentChange(assetId, personId, locationId);
+            ac = new AssignmentChange(assetId, personId, locationId, isRequest);
         else {
             ac.setPersonId(personId);
             ac.setLocationId(locationId);

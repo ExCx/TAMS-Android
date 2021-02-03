@@ -69,7 +69,7 @@ public abstract class AssetDAOBase<TAsset extends IAsset> extends DAO<TAsset> {
 
     public abstract IAssignmentChange getAssignmentChange(long assetId);
 
-    public abstract void setAssignmentChange(long assetId, long personId, long locationId);
+    public abstract void setAssignmentChange(long assetId, long personId, long locationId, boolean isRequest);
 
     @Override
     public abstract Query<TAsset> createFilteredQuery(Bundle bundle);

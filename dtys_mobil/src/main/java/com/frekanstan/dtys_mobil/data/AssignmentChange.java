@@ -23,16 +23,20 @@ public class AssignmentChange extends EntityBase implements IAssignmentChange {
     @Getter @Setter
     private long locationId;
 
+    @Getter @Setter
+    private Boolean isRequest;
+
     @Setter
     private boolean sent;
 
     public AssignmentChange() {
     }
 
-    public AssignmentChange(long assetId, long personId, long locationId) {
+    public AssignmentChange(long assetId, long personId, long locationId, Boolean isRequest) {
         this.assetId = assetId;
         this.personId = personId;
         this.locationId = locationId;
+        this.isRequest = isRequest;
         this.sent = false;
     }
 

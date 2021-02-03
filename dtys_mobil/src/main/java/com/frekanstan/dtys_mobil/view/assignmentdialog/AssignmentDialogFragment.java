@@ -32,6 +32,7 @@ public class AssignmentDialogFragment extends DialogFragment implements View.OnC
     private MainActivity mContext;
     private long personId , locationId;
     private long[] assetIds;
+    private boolean isRequest;
 
     public AssignmentDialogFragment() { }
 
@@ -42,9 +43,8 @@ public class AssignmentDialogFragment extends DialogFragment implements View.OnC
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if (context instanceof MainActivity){
+        if (context instanceof MainActivity)
             mContext = (MainActivity) context;
-        }
     }
 
     @Override
@@ -54,6 +54,7 @@ public class AssignmentDialogFragment extends DialogFragment implements View.OnC
             assetIds = getArguments().getLongArray("assetIds");
             personId = getArguments().getLong("personId");
             locationId = getArguments().getLong("locationId");
+            isRequest = getArguments().getBoolean("isRequest");
         }
     }
 
@@ -111,7 +112,7 @@ public class AssignmentDialogFragment extends DialogFragment implements View.OnC
     public void onClick(View v) {
         if (v.getId() == R.id.confirm_button) {
             for (val assetId : assetIds)
-                AssetDAO.getDao().setAssignmentChange(assetId, personId, locationId);
+                AssetDAO.getDao().setAssignmentChange(assetId, personId, locationId, isRequest);
             if (NetManager.isOnline)
                 Toast.makeText(getContext(), R.string.assignment_operation_underway, Toast.LENGTH_LONG).show();
             else
@@ -120,7 +121,7 @@ public class AssignmentDialogFragment extends DialogFragment implements View.OnC
         }
         else if (v.getId() == R.id.return_to_storage) {
             for (val assetId : assetIds)
-                AssetDAO.getDao().setAssignmentChange(assetId, 0, 0);
+                AssetDAO.getDao().setAssignmentChange(assetId, 0, 0, isRequest);
             if (NetManager.isOnline)
                 Toast.makeText(getContext(), R.string.assignment_operation_underway, Toast.LENGTH_LONG).show();
             else

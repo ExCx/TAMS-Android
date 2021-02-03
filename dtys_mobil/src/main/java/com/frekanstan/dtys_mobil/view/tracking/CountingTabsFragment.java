@@ -1,9 +1,13 @@
 package com.frekanstan.dtys_mobil.view.tracking;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -36,6 +40,7 @@ import com.frekanstan.dtys_mobil.view.MainActivity;
 import com.frekanstan.dtys_mobil.view.assetlist.AssetListViewModel;
 import com.google.android.material.tabs.TabLayout;
 import com.google.common.base.Strings;
+import com.google.common.primitives.Longs;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.Picasso;
 
@@ -63,6 +68,7 @@ public class CountingTabsFragment extends Fragment implements ISearchableFragmen
     private List<String> assetRfids;
     private List<Asset> assetsRead;
     private Integer countedCount, notCountedCount, foreignCount;
+    private List<Long> foreignAssetIds;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -89,6 +95,7 @@ public class CountingTabsFragment extends Fragment implements ISearchableFragmen
                 .findStrings());
 
         assetsRead = new ArrayList<>();
+        foreignAssetIds = new ArrayList<>();
 
         view = CountingTabsFragmentBinding.inflate(inflater, container, false);
         adapter = new CountingTabPagerAdapter(getChildFragmentManager(), requireArguments());
@@ -184,6 +191,9 @@ public class CountingTabsFragment extends Fragment implements ISearchableFragmen
             model3.getLiveData((result, error) -> {
             }).observe(getViewLifecycleOwner(), assets -> {
                 foreignCount = assets.size();
+                foreignAssetIds.clear();
+                for (val asset : assets)
+                    foreignAssetIds.add(asset.getId());
                 val badge = view.tabLayout.getTabAt(2).getOrCreateBadge();
                 badge.setVisible(true);
                 badge.setNumber(foreignCount);
@@ -193,6 +203,41 @@ public class CountingTabsFragment extends Fragment implements ISearchableFragmen
         refreshCountingProgress();
 
         return view.getRoot();
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.counting_actions, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.assign_foreign) {
+            new AlertDialog.Builder(context)
+                    .setMessage(R.string.alert_create_assignment_request_or_apply_assignment)
+                    .setNegativeButton(R.string.cancel_title,
+                            (dialog, id) -> dialog.dismiss())
+                    .setNeutralButton(R.string.create_request, (dialog, id) -> {
+                        var bundle = new Bundle();
+                        bundle.putLongArray("assetIds", Longs.toArray(foreignAssetIds));
+                        bundle.putLong("personId", personId);
+                        bundle.putLong("locationId", locationId);
+                        bundle.putBoolean("isRequest", true);
+                        context.nav.navigate(R.id.assignmentDialogFragment, bundle);
+                    })
+                    .setPositiveButton(R.string.assign_title, (dialog, id) -> {
+                        var bundle = new Bundle();
+                        bundle.putLongArray("assetIds", Longs.toArray(foreignAssetIds));
+                        bundle.putLong("personId", personId);
+                        bundle.putLong("locationId", locationId);
+                        bundle.putBoolean("isRequest", false);
+                        context.nav.navigate(R.id.assignmentDialogFragment, bundle);
+                    }).show();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
