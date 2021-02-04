@@ -669,8 +669,10 @@ public class LabelPrinter {
         }
         if (l == 5 || l == 6 || l == 7)
             width = 562;
-        if (l == 8)
+        else if (l == 8)
             width = 168;
+        else if (l == 9)
+            width = 248;
 
         val labelLayoutId = context.getResources().getIdentifier("asset_label_" + l, "layout", context.getPackageName());
         View view = LayoutInflater.from(context).inflate(labelLayoutId, null);

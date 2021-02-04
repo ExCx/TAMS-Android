@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="248dp"
+    android:layout_height="136dp"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="110dp"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_small"
+            app:srcCompat="@drawable/arma128px" />
+
+        <TextView
+            android:id="@+id/asset_label_tag_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="KÜNYE NO"
+            android:textColor="@color/black"
+            app:autoSizeMinTextSize="15sp"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/asset_label_qr_image"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:padding="@dimen/margin_small"
+        app:srcCompat="@drawable/qrcode_gray" />
+
+</LinearLayout>

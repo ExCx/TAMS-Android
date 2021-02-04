@@ -60,6 +60,7 @@
         <item>Biyomedikal</item>
         <item>Biyomedikal (Zimmet Yeri)</item>
         <item>Küçük</item>
+        <item>Küçük (Logo)</item>
     </string-array>
     <string-array name="label_type_values_24_mobil">
         <item>4</item>
@@ -67,5 +68,6 @@
         <item>6</item>
         <item>7</item>
         <item>8</item>
+        <item>9</item>
     </string-array>
 </resources>
